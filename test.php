@@ -11,8 +11,8 @@ class test
 
         $data = [
             'data'=>$authID,
-            'status' => (bool) $new,
-            'message' => $new ?'1' : '0',
+            'status' => (bool) $authID,
+            'message' => $authID ?'1' : '0',
         ];
 
         header('Content-type: application/json');
